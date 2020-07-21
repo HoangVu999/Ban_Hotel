@@ -97,12 +97,16 @@
                                         <li><a href="index-3.html">Home-3</a></li>
                                     </ul> -->
                                 </li>
-                                <li><a href="room-list.html">Phòng</a>
-                                    <!-- <ul class="dropdown">
-                                        <li><a href="room-list.html">Room List</a></li>
-                                        <li><a href="room-list-details.html">Room Details</a></li>
-                                    </ul> -->
+                                <li><a href="">Loại Phòng <b class="caret"></b></a>
+                                    <ul class="dropdown">
+                                        <li><a href="room-list.html">Phòng Standard </a></li>
+                                        <li><a href="room-list.html">Phòng Superior </a></li>
+                                        <li><a href="room-list.html">Phòng Deluxe </a></li>
+                                        <li><a href="room-list.html">Phòng Suite </a></li>
+                                        <li><a href="room-list.html">Family Room </a></li>
+                                    </ul>
                                 </li>
+
                                 <li><a href="about.html">Giới thiệu</a></li>
                                 <!-- <li><a href="spa.html">Spa</a></li> -->
                                 <li><a href="blog.html">Blog</a>
@@ -623,6 +627,14 @@
     <!-- =======================================
         ==End scroll top==  
     =======================================-->
+
+    <script>
+        $('ul.nav li.dropdown').hover(function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+        }, function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+        });
+    </script>
 
     <!-- jQuary library -->
     <script src="js/jquery-3.2.1.min.js"></script>
